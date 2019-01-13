@@ -4,7 +4,7 @@ Project of Binance Hackathon@HK 2019.
 
 ### Prerequisites 
 - nodejs
-- npm
+- yarn
 
 ### Usage
 ```bash
