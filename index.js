@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
+const router = express.Router()
 app.use(express.json());
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
 
 
 var redis = require('./database/redis');
@@ -16,7 +19,7 @@ app.get('/api/query/*', function (req, res) {
 });
 
 app.post('/api/submit', function (req, res) {
-	res.send('Hello World!');
+	
 });
 
 // Internal API enpoints
@@ -28,6 +31,11 @@ app.post('/api/internal/address', function (req, res) {
 });
 
 
+// Views
+router.get('/submit', function (req, res) => {
+	res.render('submit');
+});
+
+// Start the server
 app.listen(3000, function () {
-	console.log('Example app listening on port 3000!');
 });

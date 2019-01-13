@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Report Abuse</title>
+    </head>
+    <body>
+    <h2>Report Abuse or Suspicious Transactions</h2>
+    <p>Enter the information below to report suspicious abuses:<p>
+    
+        <form>
+        Address report:<br>
+        <input type="text" name="address"><br>
+        
+        Type of abuse:<br>
+        <select name="cars" size="4" multiple>
+            <option value="scam">Scam</option>
+            <option value="blackmail">Blackmail</option>
+            <option value="ransomware">Ransomware</option>
+            <option value="other">Other</option>
+        </select><br>
+        <input type="text" name="otherType"><br>
+        Abuser:<br>
+        <input type="text" name="abuser"><br>
+        Problem description:<br>
+        <textarea name="description" rows="10" cols="30">
+        Describe the details here...
+        </textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
